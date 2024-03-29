@@ -12,7 +12,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false, // removes the debug banner
       home: Scaffold(
-        appBar: AppBar(title: Text("Top Bar"),
+        appBar: AppBar(
+          title: const Text("Top Bar"),
+        ),
+        body: const Text("FLUTTER FLUTTER"),
+        bottomNavigationBar: BottomNavigationBar(
+          items: const [
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home 2")
+          ],
         ),
       ),
     );
